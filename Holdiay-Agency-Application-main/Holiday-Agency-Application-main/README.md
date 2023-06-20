@@ -11,4 +11,5 @@ It is a JavaFX application for holiday agencies.
 
 For more detailed information, you can view the document below. It is in German. 👀
 
+For video presentation : https://drive.google.com/file/d/1zPMACldhh5Ly5s_RbTPaE9hOvT4XcKQh/view?usp=sharing
 
