@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reisebuero.AddBuchungController">
+    <Label text="Buchung Hinzufügen">
+        <VBox.margin>
+            <Insets left="30.0" top="30.0" />
+        </VBox.margin>
+        <font>
+            <Font name="Raleway SemiBold" size="24.0" />
+        </font>
+    </Label>
+    <HBox prefHeight="50.0" prefWidth="200.0" />
+    <HBox prefHeight="50.0" prefWidth="200.0">
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Kunde:">
+            <HBox.margin>
+                <Insets left="35.0" top="10.0" />
+            </HBox.margin>
+            <font>
+                <Font name="Raleway Light" size="18.0" />
+            </font>
+        </Text>
+        <ChoiceBox fx:id="addKunde" prefWidth="400.0">
+            <HBox.margin>
+                <Insets left="140.0" top="10.0" />
+            </HBox.margin>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+        </ChoiceBox>
+    </HBox>
+    <HBox prefHeight="50.0" prefWidth="200.0">
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date:">
+            <HBox.margin>
+                <Insets left="35.0" top="10.0" />
+            </HBox.margin>
+            <font>
+                <Font name="Raleway Light" size="18.0" />
+            </font>
+        </Text>
+        <TextField fx:id="addDate" prefHeight="20.0" prefWidth="400.0">
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <HBox.margin>
+                <Insets left="155.0" top="10.0" />
+            </HBox.margin>
+        </TextField>
+    </HBox>
+    <HBox prefHeight="50.0" prefWidth="200.0">
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Startzeit:">
+            <HBox.margin>
+                <Insets left="35.0" top="10.0" />
+            </HBox.margin>
+            <font>
+                <Font name="Raleway Light" size="18.0" />
+            </font>
+        </Text>
+        <TextField fx:id="addStartzeit" prefHeight="20.0" prefWidth="400.0">
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <HBox.margin>
+                <Insets left="126.0" top="10.0" />
+            </HBox.margin>
+        </TextField>
+    </HBox>
+    <HBox prefHeight="50.0" prefWidth="200.0">
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Endezeit:">
+            <HBox.margin>
+                <Insets left="35.0" top="10.0" />
+            </HBox.margin>
+            <font>
+                <Font name="Raleway Light" size="18.0" />
+            </font>
+        </Text>
+        <TextField fx:id="addEndezeit" prefHeight="20.0" prefWidth="400.0">
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <HBox.margin>
+                <Insets left="123.0" top="10.0" />
+            </HBox.margin>
+        </TextField>
+    </HBox>
+    <HBox prefHeight="150.0" prefWidth="200.0" />
+    <HBox prefHeight="100.0" prefWidth="200.0">
+        <Button mnemonicParsing="false" onMouseClicked="#save" prefHeight="30.0" prefWidth="100.0" text="Hinzufügen">
+            <HBox.margin>
+                <Insets left="200.0" top="30.0" />
+            </HBox.margin>
+            <font>
+                <Font name="Raleway Medium" size="13.0" />
+            </font>
+        </Button>
+        <Button mnemonicParsing="false" onMouseClicked="#clean" prefHeight="30.0" prefWidth="100.0" text="Löschen">
+            <HBox.margin>
+                <Insets left="60.0" top="30.0" />
+            </HBox.margin>
+            <font>
+                <Font name="Raleway Medium" size="13.0" />
+            </font>
+        </Button>
+    </HBox>
+</VBox>

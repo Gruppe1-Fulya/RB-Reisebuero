@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reisebuero.TableControllerBuchung">
+    <TableView fx:id="table" layoutX="144.0" layoutY="89.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1080.0" AnchorPane.bottomAnchor="79.0" AnchorPane.leftAnchor="143.0" AnchorPane.rightAnchor="143.0" AnchorPane.topAnchor="89.0">
+        <columns>
+            <TableColumn fx:id="col_zustand" prefWidth="177.0" text="Zustand" />
+            <TableColumn fx:id="col_kundename" prefWidth="134.4285888671875" text="Kunde Name" />
+            <TableColumn fx:id="col_kundenachname" prefWidth="188.42855834960938" text="Kunde Nachname" />
+            <TableColumn fx:id="col_date" prefWidth="175.0" text="Date" />
+            <TableColumn fx:id="col_startdatum" prefWidth="171.28570556640625" text="Startdatum" />
+            <TableColumn fx:id="col_endedatum" prefWidth="232.5714111328125" text="Endedatum" />
+        </columns>
+    </TableView>
+    <Label alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="3.0" layoutY="-2.0" prefHeight="84.0" prefWidth="262.0" text="Buchung">
+        <font>
+            <Font name="Raleway Light" size="36.0" />
+        </font>
+        <padding>
+            <Insets left="20.0" top="20.0" />
+        </padding>
+    </Label>
+    <HBox layoutX="1166.0" layoutY="-2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="200.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-2.0">
+        <padding>
+            <Insets top="5.0" />
+        </padding>
+        <ImageView fitHeight="40.0" fitWidth="40.0" onMouseClicked="#refreshTable">
+            <HBox.margin>
+                <Insets bottom="20.0" left="20.0" right="10.0" top="20.0" />
+            </HBox.margin>
+            <Image url="@png/calendar_refresh.png" />
+        </ImageView>
+        <ImageView fitHeight="40.0" fitWidth="40.0" onMouseClicked="#removeTermin">
+            <HBox.margin>
+                <Insets bottom="20.0" left="10.0" right="20.0" top="20.0" />
+            </HBox.margin>
+            <Image url="@png/calendar_remove.png" />
+        </ImageView>
+        <ImageView fitHeight="40.0" fitWidth="40.0" onMouseClicked="#getAddView">
+            <HBox.margin>
+                <Insets bottom="20.0" right="10.0" top="20.0" />
+            </HBox.margin>
+            <Image url="@png/calendar_add.png" />
+        </ImageView>
+    </HBox>
+    <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="1150.0" layoutY="25.0" onMouseClicked="#makeDone" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="25.0">
+        <Image url="@png/calendar_done.png" />
+    </ImageView>
+</AnchorPane>
